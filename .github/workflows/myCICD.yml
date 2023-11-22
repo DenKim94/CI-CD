@@ -25,6 +25,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+      # Install (a latest version of) Node.js to run Javascript files
+      - name: Install Node.js 
+        uses: actions/setup-node@v3
+        with:
+          node-version: '21'     
       # Runs a single command using the runners shell
-      - name: Custom js-script  
-        run: myAction.js
+      - name: Run custom js-script  
+        run: node myAction.js
