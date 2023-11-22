@@ -16,7 +16,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains two jobs, which can run separately/simultaniously
+  # This workflow contains two jobs
   job1:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -32,8 +32,8 @@ jobs:
         with:
           node-version: '21'  
 
-      # Runs a single command using the runners shell
-      - name: Run custom js-script  
+      # Runs a customized script
+      - name: Run customized js-action   
         run: node .github/workflows/myActions/myFirstAction.js
 
   job2:
@@ -51,6 +51,6 @@ jobs:
         with:
           node-version: '21'  
 
-      # Runs a single command using the runners shell
-      - name: Run custom js-script  
+      # Runs a customized script
+      - name: Run customized js-action  
         run: node .github/workflows/myActions/mySecondAction.js
