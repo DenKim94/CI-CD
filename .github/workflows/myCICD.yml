@@ -27,4 +27,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Custom js-script  
-        run: myActions/myAction.js
+        run: myAction.js
