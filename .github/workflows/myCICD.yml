@@ -32,4 +32,4 @@ jobs:
           node-version: '21'     
       # Runs a single command using the runners shell
       - name: Run custom js-script  
-        run: node myAction.js
+        run: node myActions/myAction.js
